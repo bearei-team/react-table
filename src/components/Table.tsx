@@ -12,8 +12,8 @@ export interface Column<T = Record<string, unknown>> {
   dataIndex?: keyof T | string;
   key?: keyof T | string;
   width?: number;
-  fixed: 'left' | 'right';
-  render: (value: string, record: T) => ReactNode;
+  fixed?: 'left' | 'right';
+  render?: (value: string, record: T) => ReactNode;
 }
 
 /**
